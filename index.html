@@ -33,13 +33,25 @@
     </div>
     <div class="square"></div>
     <div class="inputs">
-      <form>
-        <input type="text" placeholder="First Name" class="first" />
+      <form name="signup" onsubmit="return validateForm()" action="/" method="GET">
+        <div class="firstname">
+        <input type="text" placeholder="First Name" class="first"/>
+        <div class="error" id="firstErr"></div>
+        </div>
+        <div class="lastname">
         <input type="text" placeholder="Last Name" class="last" />
+        <div class="error" id="lastErr"></div>
+        </div>
+        <div class="mail">
         <input type="text" placeholder="Email Address" class="email" />
+        <div class="error" id="emailErr"></div>
+        </div>
+        <div class="password">
         <input type="text" placeholder="Password" class="pass" />
+        <div class="error" id="passErr"></div>
+        </div>
+        <button type="submit" onclick="validateForm()" class="trail">CLAIM YOUR FREE TRIAL</button>
       </form>
-      <button class="trail">CLAIM YOUR FREE TRIAL</button>
       <p class="terms">By clicking the button, you are agreeing to our</p> <p class="services">Terms and Services</p>
     </div>
 
