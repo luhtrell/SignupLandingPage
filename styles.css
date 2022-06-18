@@ -12,3 +12,25 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.text-zone {
+    position: absolute;
+    padding: 5rem;
+    top: 10rem;
+    border: solid red 2px;
+}
+
+.big-text{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.blurb {
+    white-space: pre;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+}
