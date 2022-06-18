@@ -26,6 +26,7 @@
 
 .big-text {
   position: relative;
+  top: -0.5rem;
   margin-left: 2rem;
   color: white;
   font-family: "Poppins";
@@ -87,7 +88,7 @@
   position: absolute;
   top: 10rem;
   left: 50rem;
-  height: 25rem;
+  height: 26rem;
   width: 35rem;
   background: white;
   border-radius: 10px;
@@ -173,13 +174,17 @@ form {
   padding: 10px;
   background: #38cc8b;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Poppins";
   font-weight: 600;
   font-size: 15px;
   line-height: 26px;
   letter-spacing: 1px;
   color: white;
+}
+
+.trail:hover {
+    background-color: #77E2B3;
 }
 
 .terms {
