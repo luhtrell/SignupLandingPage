@@ -208,3 +208,14 @@ form {
   background-color: transparent;
   color: #ff7979;
 }
+
+#firstErr {
+  position: absolute;
+  top: 16rem;
+  left: 72rem;
+  background-color: transparent;
+  font-size: 11px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #FF7979;
+}
