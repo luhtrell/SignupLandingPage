@@ -219,3 +219,14 @@ form {
   font-weight: 500;
   color: #FF7979;
 }
+
+#lastErr {
+  position: absolute;
+  top: 20rem;
+  left: 72rem;
+  background-color: transparent;
+  font-size: 11px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #FF7979;
+}
