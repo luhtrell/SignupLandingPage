@@ -1,9 +1,13 @@
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName')
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 const form = document.getElementById('form');
 const button = document.getElementById('button');
 const errorElementFirst = document.getElementById('firstErr')
 const errorElementSecond = document.getElementById('lastErr')
+const errorElementThird = document.getElementById('emailErr')
+const errorElementFourth = document.getElementById('passErr')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -14,14 +18,32 @@ form.addEventListener('submit', (e) => {
 function checkInputs() {
     const firstNamevalue = firstName.value.trim();
     const lastNamevalue = lastName.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
 
     if(firstNamevalue === '') {
         errorElementFirst.innerText = 'First Name cannot be empty';
+    } else {
+        errorElementFirst.innerText = '';
     }
 
     if(lastNamevalue === '') {
         errorElementSecond.innerText = 'Last Name cannot be empty';
-    } 
+    } else {
+        errorElementSecond.innerText = '';
+    }
+
+    if(emailValue === '') {
+        errorElementThird.innerText = 'Looks like this is not a email';
+    } else {
+        errorElementThird.innerText = '';
+    }
+
+    if(passwordValue === '') {
+        errorElementFourth.innerText = 'Password cannot be empty';
+    } else {
+        errorElementFourth.innerText = '';
+    }
 }
 
 // function setErrorFor(input,message) {
