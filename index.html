@@ -33,7 +33,7 @@
     </div>
     <div class="square"></div>
     <div class="inputs">
-      <form name="signup" id="form" onsubmit="return validateForm()" action="/" method="GET">
+      <form name="signup" id="form" onsubmit="return checkInputs()" method="post">
         <div class="firstname">
         <input type="text" placeholder="First Name" class="first" id="firstName"/>
         <div class="error" id="firstErr"></div>
@@ -50,7 +50,7 @@
         <input type="password" placeholder="Password" class="pass" id="password" />
         <div class="error" id="passErr"></div>
         </div>
-        <button id="button" type="submit" class="trail">CLAIM YOUR FREE TRIAL</button>
+        <input id="button" type="submit" value="CLAIM YOUR FREE TRAIL" onclick="checkInputs()" class="trail" />
       </form>
       <p class="terms">By clicking the button, you are agreeing to our</p> <p class="services">Terms and Services</p>
     </div>

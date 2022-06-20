@@ -12,7 +12,9 @@ const errorElementFourth = document.getElementById('passErr')
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    checkInputs();
+    if(checkInputs()) {
+        form.submit();
+    }
 });
 
 function checkInputs() {
@@ -25,24 +27,28 @@ function checkInputs() {
         errorElementFirst.innerText = 'First Name cannot be empty';
     } else {
         errorElementFirst.innerText = '';
+        
     }
 
     if(lastNamevalue === '') {
         errorElementSecond.innerText = 'Last Name cannot be empty';
     } else {
         errorElementSecond.innerText = '';
+        
     }
 
     if(emailValue === '') {
         errorElementThird.innerText = 'Looks like this is not a email';
     } else {
         errorElementThird.innerText = '';
+        
     }
 
     if(passwordValue === '') {
         errorElementFourth.innerText = 'Password cannot be empty';
     } else {
         errorElementFourth.innerText = '';
+        
     }
 }
 
